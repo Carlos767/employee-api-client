@@ -1,0 +1,14 @@
+<h1>Update Employee</h1>
+
+<%= form_tag "/employees/#{@employee['id']}", :method => :patch do %>
+  <%= label_tag :first_name %>
+  <%= text_field_tag :first_name %>
+
+  <%= label_tag :last_name %>
+  <%= text_field_tag :last_name %>
+
+  <%= label_tag :email %>
+  <%= text_field_tag :email %>
+
+  <%= submit_tag "Update Employee" %>
+<% end %>
