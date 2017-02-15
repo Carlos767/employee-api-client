@@ -1,11 +1,11 @@
 <h1>Employees</h1>
 
 <% @employees.each do |employee| %>
-  <p><b>Full Name:</b><%= employee['full_name'] %></p>
-  <p><b>Email:</b><%= employee['email'] %></p>
-  <p><b>Birthday:</b><%= employee['birthday'] %></p>
+  <p><b>Full Name:</b><%= employee.full_name %></p>
+  <p><b>Email:</b><%= employee.email %></p>
+  <p><b>Birthday:</b><%= employee.birthday %></p>
   <p><b>Addresses:</b><br>
-    <% employee['addresses'].each do |address| %>
+    <% employee.addresses.each do |address| %>
       <b>Street:</b> <%= address['address'] %><br>
       <b>City:</b> <%= address['city'] %><br>
       <b>State:</b> <%= address['state'] %><br>
